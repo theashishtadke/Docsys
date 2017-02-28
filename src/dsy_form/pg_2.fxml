@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="711.0" minHeight="711.0" minWidth="0.0" prefHeight="711.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsy_form.Pg_2Controller">
+   <children>
+      <Label layoutX="39.0" layoutY="20.0" text="8.          Birth Place:" />
+      <Label layoutX="152.0" layoutY="20.0" text="Village:" />
+      <Label layoutX="326.0" layoutY="20.0" text="Taluka:" />
+      <Label layoutX="152.0" layoutY="52.0" text="District:" />
+      <Label layoutX="327.0" layoutY="52.0" prefHeight="17.0" prefWidth="38.0" text="State:" />
+      <Label layoutX="39.0" layoutY="87.0" text=" 9.          a) Name of Father/ Guardian:" />
+      <Label layoutX="84.0" layoutY="119.0" text="b) Occupation:" />
+      <Label layoutX="83.0" layoutY="151.0" text="c) Relationship with Guardian:" />
+      <Label layoutX="83.0" layoutY="183.0" text="d) Residential LANDLINE No.:" />
+      <Label layoutX="83.0" layoutY="215.0" text="e) Father's / Guardian's Mobile:" />
+      <Label layoutX="39.0" layoutY="253.0" text="10.          Total Income of family from all sources:" />
+      <Label layoutX="39.0" layoutY="286.0" text="11.          Local Address for correspondance:" />
+      <Label layoutX="84.0" layoutY="383.0" text="Candidate's Mobile No:" />
+      <Label layoutX="83.0" layoutY="417.0" text="Candidate's Email ID:" />
+      <Label layoutX="334.0" layoutY="451.0" text="Taluka:" />
+      <Label layoutX="39.0" layoutY="451.0" text="12.          Native Place:" />
+      <Label layoutX="164.0" layoutY="451.0" text="Village:" />
+      <Label layoutX="160.0" layoutY="485.0" text="District:" />
+      <Label layoutX="335.0" layoutY="485.0" prefHeight="17.0" prefWidth="38.0" text="State:" />
+      <Label layoutX="39.0" layoutY="518.0" text="13.          Whether passed SSC examination or eqvivalent" />
+      <Label layoutX="91.0" layoutY="538.0" text="with Science, Maths &amp; English:" />
+      <Label layoutX="39.0" layoutY="575.0" text="14.          Total Marks in SSC or equivalent:" />
+      <Label layoutX="352.0" layoutY="575.0" text="Out Of" />
+      <Label layoutX="39.0" layoutY="611.0" text="15.          Percentage in SSC or equivalent:" />
+      <Label layoutX="39.0" layoutY="649.0" text="16.          Year of Passing SSC or equivalent:" />
+      <Label fx:id="bplace_village" layoutX="218.0" layoutY="21.0" text="bplace_village" />
+      <Label fx:id="bplace_district" layoutX="218.0" layoutY="52.0" text="bplace_district" />
+      <Label fx:id="blc_taluka" layoutX="386.0" layoutY="21.0" text="bplc_taluka" />
+      <Label fx:id="bplace_state" layoutX="387.0" layoutY="52.0" text="bplace_state" />
+      <Label fx:id="father_name2" layoutX="290.0" layoutY="87.0" text="father_name" />
+      <Label fx:id="father_occ" layoutX="290.0" layoutY="119.0" text="father_name" />
+      <Label fx:id="father_relation" layoutX="290.0" layoutY="152.0" text="father_relation" />
+      <Label fx:id="father_landline" layoutX="289.0" layoutY="183.0" text="father_landline" />
+      <Label fx:id="father_mobile" layoutX="290.0" layoutY="215.0" text="father_mobile" />
+      <Label fx:id="total_income" layoutX="349.0" layoutY="253.0" text="total_income" />
+      <Label fx:id="stud_address" layoutX="311.0" layoutY="286.0" text="stud_address" />
+      <Label fx:id="stud_mobile" layoutX="240.0" layoutY="383.0" text="stud_mobile" />
+      <Label fx:id="stud_email" layoutX="237.0" layoutY="417.0" text="stud_email" />
+      <Label fx:id="nplace_village" layoutX="218.0" layoutY="452.0" text="nplace_village" />
+      <Label fx:id="nplc_taluka" layoutX="391.0" layoutY="451.0" text="nplc_taluka" />
+      <Label fx:id="nplace_district" layoutX="217.0" layoutY="485.0" text="nplace_district" />
+      <Label fx:id="nplace_state" layoutX="387.0" layoutY="486.0" text="nplace_state" />
+      <Label fx:id="stud_ssc" layoutX="294.0" layoutY="538.0" text="yes" />
+      <Label fx:id="ssc_total" layoutX="296.0" layoutY="575.0" text="ssc_total" />
+      <Label fx:id="ssc_totalmarks" layoutX="402.0" layoutY="575.0" text="ssc_totalmarks" />
+      <Label fx:id="ssc_per" layoutX="306.0" layoutY="611.0" text="ssc_per" />
+      <Label fx:id="ssc_passyr" layoutX="307.0" layoutY="650.0" text="ssc_passyr" />
+      <Button fx:id="print_btn" layoutX="407.0" layoutY="670.0" mnemonicParsing="false" onAction="#doPrinting" text="Print" />
+      <Button fx:id="nextB" layoutX="269.0" layoutY="671.0" mnemonicParsing="false" onAction="#nextButton" text="Next" />
+      <Button fx:id="back_btn" layoutX="149.0" layoutY="670.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="1366.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="docsysgui.MainController1">
+   <center>
+      <AnchorPane fx:id="form_pane" prefHeight="226.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollBar layoutX="1342.0" layoutY="2.0" orientation="VERTICAL" prefHeight="546.0" prefWidth="17.0" unitIncrement="5.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <Pane fx:id="centerpane" prefHeight="157.0" prefWidth="594.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="22.0" layoutY="55.0" onMouseClicked="#onClickAdm_Form" />
+            <Pane layoutX="139.0" layoutY="55.0" onMouseClicked="#onClickDSY_Form" />
+            <Label layoutX="51.0" layoutY="24.0" text="Student Information" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Group>
+               <children>
+                  <Label layoutX="63.0" layoutY="216.0" onMouseClicked="#showUniForm" text="Add Student" textFill="WHITE" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="51.0" layoutY="82.0" onMouseClicked="#showUniForm" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/A.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="130.0">
+               <children>
+                  <Label layoutX="63.0" layoutY="216.0" onMouseClicked="#editUniForm" text="Edit Student Details" textFill="WHITE" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="78.0" layoutY="82.0" onMouseClicked="#editUniForm" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/E.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="281.0">
+               <children>
+                  <Label layoutX="63.0" layoutY="216.0" onMouseClicked="#showDelUniForm" text="Delete Student" textFill="WHITE" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="82.0" onMouseClicked="#showDelUniForm" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/D.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Label layoutX="506.0" layoutY="216.0" onMouseClicked="#meritListForm" prefHeight="15.0" prefWidth="140.0" text="Merit List" textFill="WHITE" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="473.0" layoutY="82.0" onMouseClicked="#meritListForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/M.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="662.0" layoutY="217.0" onMouseClicked="#showUnitTestForm" text="Unit Test" textFill="WHITE" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="607.0" layoutY="82.0" onMouseClicked="#showUnitTestForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/UT.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

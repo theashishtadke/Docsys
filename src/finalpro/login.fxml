@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalpro.LoginController">
+   <children>
+      <Label layoutX="42.0" layoutY="85.0" text="Username:" />
+      <Label layoutX="42.0" layoutY="129.0" text="Password:" />
+      <TextField fx:id="uid" layoutX="116.0" layoutY="81.0" promptText="Enter Username" />
+      <PasswordField fx:id="pass" layoutX="116.0" layoutY="125.0" promptText="Enter Password" />
+      <Button fx:id="loginb" layoutX="103.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Login" />
+      <Button fx:id="resetb" layoutX="164.0" layoutY="173.0" mnemonicParsing="false" onAction="#resetButton" text="Reset" />
+      <Group layoutX="-36.0">
+         <children>
+            <ImageView fitHeight="56.0" fitWidth="78.0" layoutX="77.0" layoutY="11.0">
+               <image>
+                  <Image url="@../images/imageedit_20_7133180070.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Label fx:id="uidn" layoutX="118.0" layoutY="107.0" text="*username not entered" textFill="#ff0101" />
+      <Label fx:id="passn" layoutX="118.0" layoutY="153.0" text="*password not entered" textFill="#ff0101" />
+      <ImageView fitHeight="74.0" fitWidth="199.0" layoutX="119.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/main_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

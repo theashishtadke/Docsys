@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="syllabus.controller">
+   <children>
+      <ChoiceBox fx:id="csCh" layoutX="136.0" layoutY="14.0" prefHeight="25.0" prefWidth="68.0" />
+      <Label layoutX="60.0" layoutY="18.0" text="select course" />
+      <ListView fx:id="csLs" layoutX="56.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="csName" layoutX="56.0" layoutY="90.0" />
+      <Label layoutX="210.0" layoutY="94.0" text="Enter Short forms" />
+      <Button fx:id="csAdd" layoutX="56.0" layoutY="130.0" mnemonicParsing="false" onAction="#csAdd" prefHeight="25.0" prefWidth="200.0" text="Add" />
+      <ChoiceBox fx:id="csSem" layoutX="136.0" layoutY="53.0" onMouseClicked="#changeSem" prefHeight="25.0" prefWidth="68.0" />
+      <Label layoutX="62.0" layoutY="57.0" text="Semester" />
+      <Button fx:id="confirm" layoutX="56.0" layoutY="361.0" mnemonicParsing="false" onAction="#sylAdd" prefHeight="25.0" prefWidth="200.0" text="Confirm" />
+   </children>
+</Pane>

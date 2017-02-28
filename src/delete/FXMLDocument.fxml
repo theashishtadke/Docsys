@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="249.0" prefWidth="375.0" styleClass="category-page" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="delete.FXMLDocumentController">
+   <children>
+      <Label fx:id="errenroll_lbl" layoutX="131.0" layoutY="159.0" text="Invalid Enrollment No." textFill="RED" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="errname_lbl" layoutX="131.0" layoutY="101.0" text="Invalid Name" textFill="RED" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancel_btn1" layoutX="251.0" layoutY="213.0" mnemonicParsing="false" text="Cancel" />
+      <Button fx:id="ok_btn1" layoutX="21.0" layoutY="213.0" mnemonicParsing="false" onAction="#onDelete" text="OK" />
+      <TextField fx:id="enroll_tf1" layoutX="127.0" layoutY="120.0" promptText="Enter Enrollment No." />
+      <TextField fx:id="name_tf1" layoutX="126.0" layoutY="76.0" promptText="Enter Name" />
+      <Label layoutX="47.0" layoutY="12.0" prefHeight="39.0" prefWidth="295.0" text="Delete Student Details">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="122.0" text="Enrollment No.:" />
+      <Label layoutX="66.0" layoutY="82.0" text="Name:" />
+      <Label fx:id="stud_found" layoutX="112.0" layoutY="184.0" text="Student Not Found!" textFill="RED" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="dialogreset_btn" layoutX="126.0" layoutY="213.0" mnemonicParsing="false" text="Reset" />
+      <Label layoutX="61.0" layoutY="168.0" text="Form id:" />
+      <TextField fx:id="formid_tf" layoutX="125.0" layoutY="163.0" promptText="Enter Form id" />
+   </children>
+</AnchorPane>

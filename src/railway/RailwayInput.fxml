@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="railway.FXMLDocumentController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="No. F " />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Central Railway" />
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER">
+               <children>
+                  <Label layoutX="426.0" layoutY="196.0" text="Com 4SS-8" />
+                  <Label layoutX="445.0" layoutY="234.0" text="Rev 2" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <Label text="School Certificate to be issued only to students of not more than 25 years of age except otherwise ">
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <Label text="permitted under the Rules">
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <HBox>
+         <children>
+            <Label layoutX="45.0" layoutY="46.0" text="1. HEREBY CERTIFY that " />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="name" layoutX="200.0" layoutY="46.0" text="&lt;name&gt;" underline="true" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label layoutX="277.0" layoutY="46.0" text="regularly attends this School/College " />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <Label text="for the purpose of receiving education, the Institution of which I am the Principal/Head Master and his/her age  this day, according">
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </Label>
+      <HBox spacing="10.0">
+         <children>
+            <Label layoutX="8.0" layoutY="87.0" text="to my belief and from enquiries I have made, is" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="years" layoutX="295.0" layoutY="87.0" text="&lt;years&gt;" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label layoutX="356.0" layoutY="87.0" text="years" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="month" layoutX="403.0" layoutY="87.0" text="&lt;month&gt;" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label layoutX="470.0" layoutY="87.0" text="months hus/her birthday as entered in the " />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label layoutX="143.0" layoutY="192.0" text="School/College Register being" />
+            <Region maxWidth="20.0" minHeight="10.0" minWidth="20.0" prefHeight="16.0" prefWidth="20.0" HBox.hgrow="NEVER" />
+            <Label layoutX="367.0" layoutY="192.0" text="&lt;DOB&gt;" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label layoutX="97.0" layoutY="149.0" text="2. The Particulars of the recoganised course he/she is studying is given below :-" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label layoutX="97.0" layoutY="149.0" text="(a) Name of the course -">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="name_of_course" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="20.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label layoutX="97.0" layoutY="149.0" text="(b) Duration of the course  -">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="duration_course" prefWidth="80.0" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="20.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label layoutX="97.0" layoutY="149.0" text="(c) Hours of instrustions per day">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="hr_per_day" minWidth="-Infinity" prefWidth="80.0" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="20.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="10.0">
+         <children>
+            <Label text="3. He/She is, therefore, entitiled to the Season Ticket as detailed below at the consession rate :-">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <GridPane alignment="CENTER" hgap="5.0" vgap="5.0">
+         <children>
+            <Label layoutX="390.0" text="Amount" textAlignment="CENTER" GridPane.columnIndex="5" />
+            <Label layoutX="110.0" text="From" GridPane.columnIndex="1" />
+            <Label layoutX="167.0" text="To" GridPane.columnIndex="2" />
+            <Label layoutX="207.0" text="Date of issue" GridPane.columnIndex="3" />
+            <Label layoutX="300.0" text="Class and number" GridPane.columnIndex="4" />
+            <Label layoutX="390.0" layoutY="153.0" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label layoutX="108.0" layoutY="153.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label layoutX="165.0" layoutY="153.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label layoutY="153.0" text="Label" GridPane.rowIndex="1" />
+            <Label layoutX="205.0" layoutY="153.0" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label text="Period" />
+            <Label layoutX="300.0" layoutY="153.0" text="Label" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="period_input" minWidth="-Infinity" prefWidth="80.0" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" />
+            <TextField fx:id="src" minWidth="-Infinity" prefWidth="80.0" GridPane.columnIndex="1" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" />
+            <TextField fx:id="amount" minWidth="-Infinity" prefWidth="80.0" GridPane.columnIndex="5" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" />
+            <TextField fx:id="dest" minWidth="-Infinity" prefWidth="80.0" GridPane.columnIndex="2" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" />
+            <TextField fx:id="dateoi" minWidth="-Infinity" prefWidth="80.0" GridPane.columnIndex="3" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" />
+            <TextField fx:id="cls_no" minWidth="-Infinity" prefWidth="80.0" GridPane.columnIndex="4" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </GridPane>
+      <HBox spacing="40.0">
+         <children>
+            <Label layoutX="40.0" layoutY="50.0" text="No. of previous certificate issued">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <Region HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Region>
+            <TextField minWidth="-Infinity" prefWidth="80.0" />
+            <Region HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Region>
+            <Label layoutX="289.0" layoutY="50.0" text="dated">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField minWidth="-Infinity" prefWidth="80.0" />
+            <Region HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Region>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="40.0">
+         <children>
+            <Label layoutX="107.0" layoutY="156.0" text="Period of availability of the last Seasn Ticket held i.e Upto ">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="avaliable" minWidth="-Infinity" prefWidth="80.0" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="40.0">
+         <children>
+            <Label layoutX="70.0" layoutY="159.0" text="The student at present holds">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="holds" minWidth="-Infinity" prefWidth="80.0" />
+            <Label layoutX="311.0" layoutY="159.0" text="Class Season Ticket No">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="ticket_no" minWidth="-Infinity" prefWidth="80.0" />
+            <Label layoutX="509.0" layoutY="151.0" text="from">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="strt_date" minWidth="-Infinity" prefWidth="80.0" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox spacing="40.0">
+         <children>
+            <Label layoutX="74.0" layoutY="235.0" text="to" />
+            <TextField fx:id="end_date" minWidth="-Infinity" prefWidth="80.0" />
+            <Label layoutX="158.0" layoutY="235.0" text="for period ending" />
+            <TextField fx:id="ending" minWidth="-Infinity" prefWidth="80.0" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" spacing="40.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" layoutX="127.0" layoutY="298.0">
+               <children>
+                  <Label layoutX="127.0" layoutY="298.0" text="Name of college/School (School/Collage Name Stamp)">
+                     <padding>
+                        <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Region prefHeight="50.0">
+                     <padding>
+                        <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                     </padding>
+                  </Region>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label layoutX="4.0" layoutY="286.0" text="Date" />
+                        <Label fx:id="today_date" layoutX="37.0" layoutY="287.0" text="Label" />
+                     </children>
+                     <padding>
+                        <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </VBox>
+            <Button fx:id="output" mnemonicParsing="false" onMouseClicked="#retive" text="Output" />
+            <Region HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </Region>
+            <VBox layoutX="511.0" layoutY="285.0" spacing="10.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="83.0" layoutX="478.0" layoutY="11.0" stroke="TRANSPARENT" strokeType="INSIDE" width="82.0" />
+                  <Label layoutX="492.0" layoutY="107.0" text="Signature of Principal" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </padding>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+   </padding>
+</VBox>

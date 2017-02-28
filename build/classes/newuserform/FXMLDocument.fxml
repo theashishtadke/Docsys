@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="235.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newuserform.FXMLDocumentController">
+    <children>
+      <Group layoutX="3.0" layoutY="-129.0">
+         <children>
+            <Button fx:id="cancel" layoutX="206.0" layoutY="309.0" mnemonicParsing="false" onAction="#cancelClicked" text="Cancel" />
+            <Button fx:id="create" layoutX="47.0" layoutY="309.0" mnemonicParsing="false" onAction="#createClicked" text="Create" />
+            <Button fx:id="clear" layoutX="128.0" layoutY="309.0" mnemonicParsing="false" onAction="#clearClicked" text="Clear" />
+         </children>
+      </Group>
+      <Group layoutX="-116.0" layoutY="-10.0">
+         <children>
+            <Label layoutX="175.0" layoutY="108.0" text="Password:" />
+            <Label layoutX="226.0" layoutY="37.0" text="Add New User" />
+            <TextField fx:id="username" layoutX="246.0" layoutY="62.0" />
+            <Label layoutX="174.0" layoutY="67.0" text="Username:" />
+            <Label layoutX="130.0" layoutY="148.0" text="Retype Password:" />
+            <PasswordField fx:id="p1" layoutX="246.0" layoutY="103.0" />
+            <PasswordField fx:id="p2" layoutX="246.0" layoutY="144.0" />
+            <Label fx:id="luser" layoutX="247.0" layoutY="86.0" text="*username field is blank" textFill="#e70909" />
+            <Label fx:id="lpass" layoutX="249.0" layoutY="129.0" text="*password field is black" textFill="#e70909" />
+         </children>
+      </Group>
+    </children>
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+</AnchorPane>

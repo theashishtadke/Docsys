@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="markSheet.FXMLDocumentController">
+   <children>
+      <TableView fx:id="tableID" layoutX="14.0" layoutY="44.0" prefHeight="451.0" prefWidth="892.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="263.0" text="Name" />
+          <TableColumn fx:id="m1" minWidth="0.0" prefWidth="60.0" text="m1" />
+            <TableColumn fx:id="m2" minWidth="0.0" prefWidth="60.0" text="m2" />
+            <TableColumn fx:id="m3" minWidth="0.0" prefWidth="60.0" text="m3" />
+            <TableColumn fx:id="m4" minWidth="0.0" prefWidth="60.0" text="m4" />
+            <TableColumn fx:id="m5" minWidth="0.0" prefWidth="60.0" text="m5" />
+            <TableColumn fx:id="m6" minWidth="0.0" prefWidth="60.0" text="m6" />
+            <TableColumn fx:id="tot" prefWidth="100.0" text="total" />
+            <TableColumn fx:id="sign" prefWidth="177.0" text="Signature" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="823.0" layoutY="495.0" mnemonicParsing="false" onAction="#onConfirm" text="back" />
+   </children>
+</Pane>

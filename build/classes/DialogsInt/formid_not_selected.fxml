@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DialogsInt.Controller">
+   <children>
+      <Region prefWidth="10.0" />
+      <VBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Region prefHeight="10.0" />
+            <HBox alignment="CENTER" stylesheets="@../../../FinalPro/src/gui.css">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/transError.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Student Form ID is not selected" textFill="WHITE">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="select_stud" mnemonicParsing="false" onAction="#onClickSelectStud" text="Select Student" />
+                  <Button fx:id="okbtn" mnemonicParsing="false" onAction="#onclickok" text="OK" />
+               </children>
+            </HBox>
+            <Region prefHeight="10.0" />
+         </children>
+      </VBox>
+      <Region prefWidth="10.0" />
+   </children>
+</HBox>

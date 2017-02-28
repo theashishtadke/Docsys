@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="1366.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="docsysgui.MainController1">
+   <top>
+      <AnchorPane fx:id="extras_form_pane" prefHeight="230.0" prefWidth="594.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="51.0" layoutY="24.0" text="Forms" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Group>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="71.0" onMouseClicked="#onClickAdm_Form" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/adm.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="91.0" layoutY="159.0" onMouseClicked="#onClickAdm_Form" text="Admission Form" textFill="WHITE" />
+               </children>
+            </Group>
+            <Group layoutX="216.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="60.0" layoutY="71.0" onMouseClicked="#onClickDSY_Form" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/dsy.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="47.0" layoutY="159.0" onMouseClicked="#onClickDSY_Form" text="Direct Second Year Admission Form" textFill="WHITE" />
+               </children>
+            </Group>
+            <Label layoutX="517.0" layoutY="159.0" onMouseClicked="#onClickBonafide_form" text="Bonafide Certificate" textFill="WHITE" />
+            <ImageView fitHeight="136.0" fitWidth="87.0" layoutX="523.0" layoutY="57.0" onMouseClicked="#onClickBonafide_form" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/B.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="670.0" layoutY="158.0" onMouseClicked="#showLeavingForm" text="Leaving Certificate" textFill="WHITE" />
+            <ImageView fitHeight="124.0" fitWidth="134.0" layoutX="662.0" layoutY="63.0" onMouseClicked="#showLeavingForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/lc.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="77.0" layoutX="836.0" layoutY="64.0" onMouseClicked="#showRailwayForm" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/R.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="815.0" layoutY="158.0" onMouseClicked="#showRailwayForm" text="Railway Reservation" textFill="WHITE" />
+         </children></AnchorPane>
+   </top>
+</BorderPane>

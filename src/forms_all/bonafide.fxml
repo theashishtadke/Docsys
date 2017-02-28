@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="636.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forms_all.BonafideController">
+   <children>
+      <Label layoutX="237.0" layoutY="45.0" text="Smt.S. H. Mansukhani">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="104.0" fitWidth="88.0" layoutX="29.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hsnc.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="147.0" layoutY="60.0" text="INSTITUTE OF TECHNOLOGY">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="102.0" fitWidth="92.0" layoutX="472.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@shmit.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Label layoutX="220.0" layoutY="88.0" text="(An Engineering Polytechnic)">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="105.0" text="Founded and Managed By">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="119.0" layoutY="118.0" text="HYDRABAD (SIND) NATIONAL COLLEGIATE BOARD ,MUMBAI">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="133.0" text="President :" />
+      <Label layoutX="46.0" layoutY="148.0" text="Mr.Kishu Mansukhani">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="429.0" layoutY="141.0" text="Secretary :" />
+      <Label layoutX="443.0" layoutY="155.0" text="Prof. J.K. Bhambhani">
+         <font>
+            <Font name="Arial Bold" size="11.0" />
+         </font>
+      </Label>
+      <Line endX="370.0" layoutX="200.0" layoutY="175.0" startX="-175.0" />
+      <Label layoutX="150.0" layoutY="190.0" text="BONAFIDE CERTIFICATE" underline="true">
+         <font>
+            <Font name="Kristen ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="218.0" prefHeight="16.0" prefWidth="541.0" text="Smt. S. H. Mansukhani The Institute of Technology conducts three year full-time  post-SSC" textAlignment="JUSTIFY">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="234.0" prefHeight="16.0" prefWidth="537.0" text="Diploma courses in Electronics  &amp;  Telecommunication Engineering, Computer Technology">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="250.0" prefHeight="16.0" prefWidth="539.0" text="and Information technology . The Institute is approvedby All India Council for Technical" textAlignment="JUSTIFY">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="266.0" prefHeight="16.0" prefWidth="541.0" text="Education (AICTE),New Delhi, recognized  by Director of Technical Education (DTE) ," textAlignment="JUSTIFY">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="282.0" text="Maharashtra state and affiliated to Maharashtra State Board of Technical Education (MSBTE)">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="300.0" text=",Mumbai">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="326.0" text="This is to certify Shri/smt./kum. ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Text layoutX="25.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="is/was a bonafide student of this Institute in the ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label layoutX="475.0" layoutY="354.0" text="class of the ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="386.0" text="academic year " />
+      <Label fx:id="acayear" layoutX="132.0" layoutY="385.0" text="acayear" />
+      <Label layoutX="33.0" layoutY="419.0" text="To the best of my knowledge and belif, he/she bears a good moral character.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="451.0" text="Date: " />
+      <Label layoutX="158.0" layoutY="451.0" text="for S.H.M. Institute of Technology,Ulhasnagar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="515.0" text="A.B.PATIL">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="542.0" text="Prinicipal">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Line endX="370.0" layoutX="205.0" layoutY="562.0" startX="-175.0" />
+      <Label layoutX="177.0" layoutY="563.0" text="Opposite Railway Station,Ulhasnagar-421 003">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="140.0" layoutY="579.0" text="Telefax:(0251)2567670,2568380          Email:itunr@vsnl.com">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="238.0" layoutY="327.0" prefHeight="17.0" prefWidth="322.0" text="Label" />
+      <Label fx:id="classname" layoutX="341.0" layoutY="356.0" prefHeight="17.0" prefWidth="155.0" text="Label" />
+      <Label fx:id="tdate" layoutX="73.0" layoutY="450.0" prefHeight="17.0" prefWidth="83.0" text="dd/MM/YYYY" />
+      <FlowPane prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="print_btn" layoutX="309.0" layoutY="607.0" mnemonicParsing="false" onAction="#doPrinting" text="Print" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minHeight="150.0" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="docsysgui.MainController1">
+   <children>
+      <HBox alignment="CENTER" fillHeight="false" maxHeight="-Infinity" prefHeight="56.0" prefWidth="2434.0" styleClass="category-page">
+         <children>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Group>
+               <children>
+                  <ImageView fitHeight="74.0" fitWidth="199.0" layoutX="116.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/main_logo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="78.0" layoutX="77.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../images/imageedit_20_7133180070.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="17.0" prefWidth="601.0">
+        <items>
+          <Button fx:id="uniform_btn" mnemonicParsing="false" onAction="#showUniForm" text="Universal Form" />
+            <Button fx:id="leavingBut" mnemonicParsing="false" onAction="#showLeavingForm" text="leaving" />
+            <Button fx:id="genbtn" mnemonicParsing="false" onAction="#ongenbtn" text="genrate Forms" />
+            <Button fx:id="about" mnemonicParsing="false" onAction="#aboutForm" text="about" />
+            <Button fx:id="railbtn" mnemonicParsing="false" onAction="#showRailwayForm" text="railway reservation" />
+            <Button fx:id="delbtn" mnemonicParsing="false" onAction="#showDelUniForm" text="delete record" />
+            <Button fx:id="unittestbtn" mnemonicParsing="false" onAction="#showUnitTestForm" text="Unit Test " />
+            <Button fx:id="mlbtn" mnemonicParsing="false" onAction="#meritListForm" text="MeritList" />
+            <Button fx:id="bonabtn" mnemonicParsing="false" onAction="#bonafideForm" text="Bonafide" />
+            <Button fx:id="editbtn" mnemonicParsing="false" onAction="#editUniForm" text="Edit universal form" />
+        </items>
+      </ToolBar>
+      <SplitPane dividerPositions="0.2809364548494983" VBox.vgrow="ALWAYS">
+        <items>
+          <AnchorPane maxWidth="150.0" minHeight="0.0" minWidth="100.0" prefHeight="160.0" prefWidth="90.0">
+               <children>
+                  <Accordion layoutX="-50.0" layoutY="-8.0" minWidth="20.0" prefHeight="398.0" prefWidth="164.0" styleClass="page-tree" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <panes>
+                        <TitledPane onMouseClicked="#onClickAdm_Cat" prefHeight="619.0" prefWidth="163.0" styleClass="page-tree" text="ADMISSION">
+                           <content>
+                              <AnchorPane prefHeight="100.0" prefWidth="200.0" styleClass="page-tree">
+                                 <children>
+                                    <Label layoutX="39.0" layoutY="7.0" prefHeight="24.0" prefWidth="158.0" text="Admission Form" />
+                                    <ScrollBar layoutX="183.0" orientation="VERTICAL" prefHeight="274.0" prefWidth="17.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="183.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                           <effect>
+                              <InnerShadow height="0.0" radius="4.75" />
+                           </effect>
+                        </TitledPane>
+                        <TitledPane onMouseClicked="#onClickGRE" text="GRE">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="page-tree" />
+                           </content>
+                           <effect>
+                              <InnerShadow height="0.0" radius="4.75" />
+                           </effect>
+                        </TitledPane>
+                        <TitledPane onMouseClicked="#onClickExtras_Page" text="EXTRAS">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="274.0" prefWidth="158.0" styleClass="page-tree" />
+                           </content>
+                           <effect>
+                              <InnerShadow height="0.0" radius="4.75" />
+                           </effect>
+                        </TitledPane>
+                     </panes>
+                  </Accordion>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane fx:id="centerpane" prefHeight="187.0" prefWidth="488.0" AnchorPane.bottomAnchor="-27.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-47.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

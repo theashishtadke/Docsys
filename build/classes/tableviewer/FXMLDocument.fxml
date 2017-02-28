@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tableviewer.FXMLDocumentController">
+   <tabs>
+      <Tab text="Information Technology">
+         <content>
+            <AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="419.0">
+                <children>
+                  <TableView fx:id="etableID" layoutX="11.0" layoutY="14.0" prefHeight="511.0" prefWidth="398.0">
+                    <columns>
+                      <TableColumn fx:id="eid" prefWidth="79.0" text="FormID" />
+                      <TableColumn fx:id="ename" prefWidth="151.0" text="NAME" />
+                        <TableColumn fx:id="eenroll" prefWidth="90.0" text="Enrollment no" />
+                        <TableColumn fx:id="eper" prefWidth="85.0" text="Percentage" />
+                    </columns>
+                  </TableView>
+                  <ProgressIndicator fx:id="p" layoutX="200.0" layoutY="250.0" progress="0.0" />
+                  <Button fx:id="b1" layoutX="350.0" layoutY="480.0" mnemonicParsing="false" onAction="#onIF" text="Button" />
+                </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Computer Enginnering">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="etableID1" layoutX="11.0" layoutY="13.0" prefHeight="511.0" prefWidth="398.0">
+                     <columns>
+                        <TableColumn fx:id="eid1" prefWidth="74.0" text="FormID" />
+                        <TableColumn fx:id="ename1" prefWidth="156.0" text="NAME" />
+                        <TableColumn fx:id="eenroll1" prefWidth="90.0" text="Enrollment no" />
+                        <TableColumn fx:id="eper1" prefWidth="85.0" text="Percentage" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="b2" layoutX="350.0" layoutY="480.0" mnemonicParsing="false" onAction="#onCM" text="Button" />
+                  <ProgressIndicator fx:id="p2" layoutX="200.0" layoutY="250.0" progress="0.0" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Electronics ">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="etableID2" layoutX="11.0" layoutY="13.0" prefHeight="511.0" prefWidth="398.0">
+                     <columns>
+                        <TableColumn fx:id="eid2" prefWidth="79.0" text="FormID" />
+                        <TableColumn fx:id="ename2" prefWidth="151.0" text="NAME" />
+                        <TableColumn fx:id="eenroll2" prefWidth="90.0" text="Enrollment no" />
+                        <TableColumn fx:id="eper2" prefWidth="85.0" text="Percentage" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="b3" layoutX="350.0" layoutY="480.0" mnemonicParsing="false" onAction="#onEJ" text="Button" />
+                  <ProgressIndicator fx:id="p3" layoutX="200.0" layoutY="250.0" progress="0.0" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</TabPane>

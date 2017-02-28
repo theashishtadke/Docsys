@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edit_uni.SuccessController">
+   <bottom>
+      <AnchorPane prefHeight="49.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ok_btn" defaultButton="true" layoutX="492.0" layoutY="12.0" mnemonicParsing="false" onAction="#onClickOK" text="OK" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../Downloads/Project/VinayDocSysGUI1/src/images/checkmark.png" />
+         </image>
+      </ImageView>
+   </left>
+   <center>
+      <Label text="Details Updated Sucessfully!" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

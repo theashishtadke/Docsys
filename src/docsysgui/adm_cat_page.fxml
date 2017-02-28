@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="1366.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="docsysgui.MainController1">
+   <center>
+      <AnchorPane fx:id="form_pane" prefHeight="226.0" prefWidth="640.0" BorderPane.alignment="CENTER">
+         <children>
+            <ScrollBar layoutX="1342.0" layoutY="2.0" orientation="VERTICAL" prefHeight="546.0" prefWidth="17.0" unitIncrement="5.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <Pane prefHeight="157.0" prefWidth="594.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="165.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page-header" text="Admission Forms" wrappingWidth="246.17410278320312" />
+            <Pane layoutX="22.0" layoutY="55.0" onMouseClicked="#onClickAdm_Form">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="88.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/A.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutY="77.0" text="Admission Form" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane layoutX="139.0" layoutY="55.0" onMouseClicked="#onClickDSY_Form">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="99.0" layoutX="43.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Dsy.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="11.0" layoutY="77.0" text="Direct Second Year Form" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

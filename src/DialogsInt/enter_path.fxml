@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DialogsInt.Controller">
+   <left>
+      <ImageView fitHeight="106.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../images/question%20mark.jpg" />
+         </image>
+      </ImageView>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="48.0" prefWidth="594.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="browse_btn" layoutX="383.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickbrowse" text="Browse" />
+            <TextField fx:id="path_tf" layoutX="24.0" layoutY="13.0" prefHeight="25.0" prefWidth="352.0" />
+            <Button fx:id="pathokbtn" layoutX="499.0" layoutY="13.0" mnemonicParsing="false" onAction="#onClickpathok" text="OK" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <Label text="Enter path of Image" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </center>
+</BorderPane>

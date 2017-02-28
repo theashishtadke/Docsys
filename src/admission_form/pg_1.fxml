@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admission_form.FXMLDocumentController">
+   <children>
+      <Label fx:id="academic_year1" layoutX="332.0" layoutY="131.0" text="Label" />
+      <Label fx:id="iti1" layoutX="254.0" layoutY="623.0" text="Label" />
+      <Label layoutX="496.0" layoutY="592.0" text="Label" fx:id="xii_mcvc1" />
+      <Label fx:id="hscscience1" layoutX="192.0" layoutY="593.0" text="Label" />
+      <Label fx:id="englishmarks_ssc1" layoutX="497.0" layoutY="558.0" text="Label" />
+      <Label fx:id="englishmarks_stud1" layoutX="403.0" layoutY="556.0" text="Label" />
+      <Label fx:id="sciencemarks_ssc1" layoutX="497.0" layoutY="526.0" text="Label" />
+      <Label fx:id="sciencemarks_stud1" layoutX="403.0" layoutY="525.0" text="Label" />
+      <Label fx:id="mathsmarks_ssc1" layoutX="496.0" layoutY="495.0" text="Label" />
+      <Label fx:id="mathsmarks_stud1" layoutX="402.0" layoutY="495.0" text="Label" />
+      <Label fx:id="totalmarks_ssc1" layoutX="497.0" layoutY="464.0" text="Label" />
+      <Label fx:id="totalmarks_stud1" layoutX="401.0" layoutY="462.0" text="Label" />
+      <Label fx:id="defenceservice1" layoutX="535.0" layoutY="430.0" text="Label" />
+      <Label fx:id="physicalhandicap1" layoutX="220.0" layoutY="431.0" text="Label" />
+      <Label fx:id="ssc_tech1" layoutX="534.0" layoutY="398.0" text="Label" />
+      <Label fx:id="ssc_local1" layoutX="220.0" layoutY="397.0" text="Label" />
+      <Label fx:id="ssc_mah1" layoutX="534.0" layoutY="364.0" text="Label" />
+      <Label fx:id="domi_mah1" layoutX="220.0" layoutY="365.0" text="yes" />
+      <Label fx:id="dob1" layoutX="345.0" layoutY="331.0" text="Label" />
+      <Label fx:id="gender1" layoutX="94.0" layoutY="331.0" text="Label" />
+      <Label fx:id="mothername1" layoutX="151.0" layoutY="295.0" text="Label" />
+      <Label fx:id="fathername1" layoutX="151.0" layoutY="263.0" text="Label" />
+      <Label fx:id="firstname1" layoutX="151.0" layoutY="232.0" text="Label" />
+      <Label fx:id="surname1" layoutX="151.0" layoutY="199.0" text="Label" />
+      <Label layoutX="127.0" layoutY="30.0" text="130737">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="592.0" text="18. Passed XII std. with MCVC">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="622.0" text="19. Passed I.T.I Trade of 2 years">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="462.0" text="out of">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="447.0" layoutY="494.0" text="out of">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="294.0" text="4. Mother's Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="262.0" text="3. Father's Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="100.0" text="(An Engineering Polytechnic)">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="330.0" text="5. Gender">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="80.0" text="INSTITUTE  OF  TECHNOLOGY">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="199.0" text="1. Surname">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="430.0" text="12. Defence Service Personnel">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="397.0" text="10. SSC with Technical">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="97.0" fitWidth="114.0" layoutX="48.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Laptop%20backup/NetBeansProjects/DocSysGUI/src/images/hsnc.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="448.0" layoutY="524.0" text="out of">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="430.0" text="11. Physically Handicapped">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="526.0" text="15. Marks secured in SCIENCE in SSC exam">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="459.0" text="13. Total Marks secured in SSC exam (BEST OF 5)">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="362.0" text="8. SSC from Maharashtra">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="592.0" text="17. Passed HSC Science">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="558.0" text="16. Marks secured in ENGLISH in SSC exam">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="397.0" text="9. SSC from Local District">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="448.0" layoutY="556.0" text="out of">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="154.0" text="(Read instructions given overleaf carefully" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="59.0" text="Smt. S. H. Mansukhani">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="495.0" text="14. Marks secured in MATHS in SSC exam">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="231.0" text="2. First Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="114.0" layoutX="462.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Laptop%20backup/NetBeansProjects/DocSysGUI/src/images/shmit.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="180.0" layoutY="167.0" text="before filling up this data card)" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="330.0" text="6. Date of Birth">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="362.0" text="7. Domicile Maharashtra">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="129.0" text="DATA CARD">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="34.0" text="Form No.___________">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="657.0" text="20. Passed Intermediate Grade Drawing Examination">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="int_grade_exam1" layoutX="416.0" layoutY="657.0" text="Label" />
+      <Button fx:id="next" layoutX="241.0" layoutY="685.0" mnemonicParsing="false" onAction="#nextClicked" text="Next" />
+      <Button fx:id="print_btn" layoutX="340.0" layoutY="685.0" mnemonicParsing="false" onAction="#doPrininting" text="Print" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane blendMode="DARKEN" maxHeight="711.0" maxWidth="540.0" minHeight="-Infinity" prefHeight="711.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsy_form.Pg_1Controller">
+   <children>
+      <Label layoutX="124.0" layoutY="59.0" prefHeight="27.0" prefWidth="357.0" text="INSTITUTE OF TECHNOLOGY">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="31.0" prefHeight="28.0" prefWidth="309.0" text=" SMT. S. H. MANSUKHANI">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="80.0" prefHeight="27.0" prefWidth="178.0" text="(An Engineering Polytechnic)">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="100.0" text="Opposite Ulhasnagar Railway Station, CHM campus, Ulhasnagar- 421003">
+         <font>
+            <Font name="Arial" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="240.0" layoutY="131.0" text="Website: www.itunr.edu" />
+      <Label layoutX="270.0" layoutY="114.0" text="Telephone Number??" />
+      <Label layoutX="213.0" layoutY="148.0" text="APPLICATION FORM">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="169.0" text="for">
+         <font>
+            <Font name="Monotype Corsiva" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="170.0" text="Direct Admission to DIRECT SECOND YEAR DIPLOMA" textFill="#141414">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="170.0" text="in">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="216.0" layoutY="187.0" text="Engineering / Technology">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fcfcfc" height="175.0" layoutX="10.0" layoutY="228.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Line endX="350.0" layoutX="257.0" layoutY="216.0" startX="-260.0" />
+      <Label layoutX="57.0" layoutY="232.0" text="FOR OFFICE USE ONLY">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+      </Label>
+      <Line endX="53.0" layoutX="155.0" layoutY="254.0" startX="-100.0" />
+      <Label fx:id="regt_fee_no" layoutX="39.0" layoutY="260.0" text="1. Registration Fee Receipt No." />
+      <Label fx:id="tution_fee_no" layoutX="40.0" layoutY="279.0" text="2. Tution Fee Receipt No." />
+      <Label layoutX="40.0" layoutY="299.0" text="3. Academic Year." />
+      <Label layoutX="40.0" layoutY="319.0" text="4. Class &amp; Course." />
+      <Label layoutX="40.0" layoutY="338.0" text="5. Roll No." />
+      <Label layoutX="40.0" layoutY="357.0" text="6. Category" />
+      <Line endX="350.0" layoutX="265.0" layoutY="424.0" startX="-265.0" />
+      <Label layoutX="10.0" layoutY="430.0" text="To,">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="447.0" text="The Principal,">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="464.0" text="Smt S. H. Mansukhani Institute Of Technology">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="481.0" text="Ulhasnagar 3.">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="496.0" text="Sir,">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="513.0" prefHeight="17.0" prefWidth="496.0" text="I request you to kindly consider my candidature for admission to Direct Second ">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="530.0" prefHeight="17.0" prefWidth="494.0" text="year diploma in Engineering / Technology. I submit herewith all the necessary details.">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="547.0" text="1. Name of Candidate" />
+      <ImageView fitHeight="88.0" fitWidth="110.0" layoutX="18.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Downloads/hsnc.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="98.0" layoutX="486.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Downloads/shmit.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="10.0" layoutY="585.0" text="2. Gender:" />
+      <Label layoutX="10.0" layoutY="607.0" text="3. Category:" />
+      <Label layoutX="10.0" layoutY="628.0" text="4. Caste:" />
+      <Label layoutX="249.0" layoutY="628.0" text="5. Religion:" />
+      <Label layoutX="10.0" layoutY="650.0" text="6. Nationality" />
+      <Label layoutX="245.0" layoutY="651.0" text="7. DOB:" />
+      <Button fx:id="nextB" layoutX="245.0" layoutY="684.0" mnemonicParsing="false" onAction="#nextButton" text="Next" />
+      <Label fx:id="last_name" layoutX="30.0" layoutY="563.0" text="last_name" />
+      <Label fx:id="first_name" layoutX="161.0" layoutY="563.0" text="first_name" />
+      <Label fx:id="father_name" layoutX="290.0" layoutY="563.0" text="father_name" />
+      <Label fx:id="mother_name" layoutX="427.0" layoutY="563.0" text="mother_name" />
+      <Label fx:id="gender" layoutX="111.0" layoutY="585.0" text="gender" />
+      <Label fx:id="category" layoutX="105.0" layoutY="607.0" text="category" />
+      <Label fx:id="caste" layoutX="96.0" layoutY="629.0" text="caste" />
+      <Label fx:id="nationality" layoutX="126.0" layoutY="650.0" text="nationality" />
+      <Label fx:id="religion" layoutX="341.0" layoutY="627.0" text="religion" />
+      <Label fx:id="DOB" layoutX="309.0" layoutY="650.0" text="DOB" />
+      <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="150.0" layoutX="410.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="print_btn" layoutX="408.0" layoutY="684.0" mnemonicParsing="false" onAction="#doPrinting" text="Print" />
+   </children>
+</AnchorPane>

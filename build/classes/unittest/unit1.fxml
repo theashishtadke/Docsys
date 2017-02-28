@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unittest.FXMLDocumentController">
+   <children>
+      <ChoiceBox fx:id="ch" layoutX="127.0" layoutY="64.0" prefWidth="150.0" />
+      <Label layoutX="24.0" layoutY="68.0" text="Year &amp; Course" />
+      <Group fx:id="option">
+         <children>
+            <TextField fx:id="rollno" layoutX="322.0" layoutY="64.0" onKeyReleased="#specNumber" promptText="enter Rollno" />
+            <Label layoutX="275.0" layoutY="68.0" text="RollNo" />
+         </children>
+      </Group>
+      <TableView fx:id="tb1" layoutX="26.0" layoutY="118.0" prefHeight="263.0" prefWidth="149.0">
+        <columns>
+          <TableColumn fx:id="sub" prefWidth="75.0" sortable="false" text="Name" />
+          <TableColumn fx:id="m" prefWidth="75.0" sortable="false" text="Marks" />
+        </columns>
+      </TableView>
+      <Group fx:id="entry">
+         <children>
+            <TextField fx:id="om" layoutX="221.0" layoutY="225.0" onAction="#onAdd" promptText="Enter marks" />
+            <Label fx:id="subL" layoutX="245.0" layoutY="192.0" prefHeight="17.0" prefWidth="112.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="add" layoutX="188.0" layoutY="263.0" mnemonicParsing="false" onAction="#onAdd" prefHeight="40.0" prefWidth="211.0" text="make entry" />
+            <Label fx:id="rollno1" layoutX="278.0" layoutY="165.0" text="rollno" />
+         </children>
+      </Group>
+      <Button fx:id="ch_sub" layoutX="188.0" layoutY="328.0" mnemonicParsing="false" onAction="#changeSyll" prefHeight="25.0" prefWidth="211.0" text="change the subjects" />
+      <Label layoutX="182.0" layoutY="127.0" text="No of students" />
+      <TextField fx:id="noStud" layoutX="280.0" layoutY="122.0" onAction="#onNoChange" />
+      <Button fx:id="print" layoutX="188.0" layoutY="369.0" mnemonicParsing="false" onAction="#onPrint" text="print" />
+   </children>
+</Pane>

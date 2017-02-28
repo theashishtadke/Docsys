@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="267.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dsy_form.Pg_3Controller">
+   <children>
+      <Label fx:id="qualify_year" layoutX="293.0" layoutY="201.0" text="qualify_year" />
+      <Label fx:id="qualify_per" layoutX="343.0" layoutY="167.0" text="qualify_per" />
+      <Label fx:id="qualify_exam_total" layoutX="469.0" layoutY="133.0" text="qualify_exam_total" />
+      <Label fx:id="qualify_exam_sum" layoutX="387.0" layoutY="133.0" text="QES" />
+      <Label fx:id="vocational_sub" layoutX="309.0" layoutY="79.0" text="vocational_sub" />
+      <Label layoutX="309.0" layoutY="27.0" text="qualifying_exam" />
+      <Label layoutX="20.0" layoutY="201.0" text="21.          Year of Passing Qualiying Exam" />
+      <Label layoutX="20.0" layoutY="167.0" text="20.          Percentage secured in Qualifying Exam" />
+      <Label layoutX="420.0" layoutY="133.0" text="Out Of" />
+      <Label layoutX="15.0" layoutY="133.0" text="19.Aggregrate marks scored in Qualifying Examination" />
+      <Label layoutX="66.0" layoutY="100.0" text="or Course taken at ITI/ MCVC exam." />
+      <Label layoutX="20.0" layoutY="79.0" text="18.          Vocational Subject taken in HSC(Sci) " />
+      <Label layoutX="67.0" layoutY="48.0" text="/ HSC Bifocal (Tech) / MCVC / ITI / CoE" />
+      <Label layoutX="20.0" layoutY="27.0" text="17.          Qualifying Examination HSC(Sci) " />
+      <Button fx:id="print_btn" layoutX="334.0" layoutY="230.0" mnemonicParsing="false" onAction="#doPrinting" text="Print" />
+      <Button fx:id="back_btn" layoutX="189.0" layoutY="230.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="docsysgui.MainController1">
+   <children>
+      <VBox layoutX="33.0" layoutY="71.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#7c9dbc" height="80.0" layoutX="33.0" layoutY="71.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+            <Text fill="#d7d2d2" layoutX="33.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page-subheader" text="GRE Form" />
+         </children>
+      </VBox>
+      <Text fill="#c6c3c3" layoutX="25.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page-header" text="GRE Forms">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

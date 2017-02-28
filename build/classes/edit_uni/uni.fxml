@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<ScrollPane prefHeight="390.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edit_uni.UniController">
+   <content>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+               <children>
+                  <GridPane alignment="CENTER" vgap="3.0">
+                     <children>
+                        <Label layoutY="30.0" text="Name of Candidate:" />
+                        <Label text="First Name:" GridPane.rowIndex="1" />
+                        <Label text="Father Name:" GridPane.rowIndex="2" />
+                        <Label text="Mother Name:" GridPane.rowIndex="3" />
+                        <Label text="Surname Name:" GridPane.rowIndex="4" />
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TextField fx:id="cand_f" layoutX="206.0" layoutY="60.0" onKeyReleased="#valid" />
+                              <Label fx:id="cand_namel" layoutX="367.0" layoutY="71.0" text="Invalid Name" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <TextField fx:id="cand_fa" layoutX="206.0" layoutY="95.0" onKeyReleased="#valid1" />
+                              <Label fx:id="cand_fal" layoutX="367.0" layoutY="113.0" text="Invalid Name" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <TextField fx:id="cand_m" layoutX="206.0" layoutY="131.0" onKeyReleased="#valid2" />
+                              <Label fx:id="cand_mnamel" layoutX="367.0" layoutY="146.0" text="Invalid Name" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <TextField fx:id="cand_s" layoutX="206.0" layoutY="167.0" onKeyReleased="#valid3" />
+                              <Label fx:id="cand_snamel" layoutX="367.0" layoutY="178.0" text="Invalid Name" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="321.0" minWidth="10.0" prefWidth="139.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="497.0" minWidth="10.0" prefWidth="497.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints valignment="CENTER" />
+                        <RowConstraints valignment="CENTER" />
+                        <RowConstraints valignment="CENTER" />
+                        <RowConstraints valignment="CENTER" />
+                        <RowConstraints valignment="CENTER" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" vgap="3.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <RadioButton fx:id="male" layoutX="179.0" layoutY="167.0" mnemonicParsing="false" text="Male" GridPane.columnIndex="1" />
+                        <Label fx:id="cand_sex" layoutX="337.0" layoutY="168.0" text="Select One Option" textFill="RED" visible="false" GridPane.columnIndex="3" />
+                        <RadioButton fx:id="female" layoutX="248.0" layoutY="167.0" mnemonicParsing="false" text="Female" GridPane.columnIndex="2" />
+                        <Label layoutX="109.0" layoutY="168.0" text="Gender:" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" vgap="3.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="91.0" layoutY="230.0" text="Category (Caste):" GridPane.rowIndex="2" />
+                        <Label text="* Caste not entered" textFill="#f82727" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="religion" prefHeight="26.0" prefWidth="507.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Religion :" GridPane.rowIndex="4" />
+                        <Label text="* Religion not entered" textFill="#f82727" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="category" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="141.53636932373047" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="554.0" minWidth="10.0" prefWidth="494.46363067626953" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints maxHeight="0.0" minHeight="0.0" prefHeight="0.0" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" vgap="3.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="43.0" layoutY="46.0" text="Date of Birth:" />
+                        <VBox GridPane.columnIndex="1">
+                           <children>
+                              <DatePicker fx:id="DOBDate" layoutX="327.0" layoutY="46.0" />
+                              <Label fx:id="cand_bpl1" text="Invalid DOB'" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <Label text="Birthplace:" GridPane.rowIndex="1" />
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TextField fx:id="dob_place" onKeyReleased="#bpvalid" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="cand_bpl" text="Invalid Birthplace" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <Label text="Village:" GridPane.rowIndex="2" />
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <TextField fx:id="dob_village" layoutX="229.0" layoutY="218.0" onKeyReleased="#vilvalid" onMouseClicked="#bpvalid" />
+                              <Label fx:id="cand_vil" layoutX="388.0" layoutY="223.0" text="Invalid Village" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <Label text="Taluka:" GridPane.rowIndex="3" />
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <TextField fx:id="dob_taluka" layoutX="230.0" layoutY="254.0" onKeyReleased="#talvalid" onMouseClicked="#vilvalid" />
+                              <Label fx:id="cand_tall" layoutX="388.0" layoutY="259.0" text="Invalid Taluka" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <Label text="District:" GridPane.rowIndex="4" />
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <TextField fx:id="dob_district" layoutX="231.0" layoutY="290.0" onKeyReleased="#distvalid" />
+                              <Label fx:id="cand_distl" layoutX="440.0" layoutY="299.0" text="Invalid District" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <Label text="State:" GridPane.rowIndex="5" />
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <children>
+                              <TextField fx:id="dob_state" layoutX="231.0" layoutY="325.0" onKeyReleased="#statevalid" onMouseClicked="#distvalid" />
+                              <Label fx:id="cand_statel" layoutX="448.0" layoutY="336.0" text="Invalid State" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.0" minWidth="10.0" prefWidth="141.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="546.0" minWidth="10.0" prefWidth="495.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" vgap="3.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label layoutY="14.0" text="Name of Father/Gaurdian:" />
+                        <VBox GridPane.columnIndex="1">
+                           <children>
+                              <TextField fx:id="name_father" layoutX="275.0" layoutY="157.0" onKeyReleased="#fnamevalid" />
+                              <Label fx:id="cand_fnamel" layoutX="445.0" layoutY="162.0" text="Invalid Name" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <Label text="Occupation:" GridPane.rowIndex="1" />
+                        <Label text="Relationship with Gaurdian:" GridPane.rowIndex="2" />
+                        <Label text="Residential Landline Number:" GridPane.rowIndex="3" />
+                        <Label text="Father/Gaurdian Number:" GridPane.rowIndex="4" />
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <TextField fx:id="occupation" layoutX="275.0" layoutY="192.0" onMouseClicked="#fnamevalid" />
+                              <Label fx:id="cand_foccl" layoutX="445.0" layoutY="196.0" text="Invalid Data" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <TextField fx:id="relation" layoutX="275.0" layoutY="228.0" />
+                              <Label fx:id="cand_frelnl" layoutX="441.0" layoutY="232.0" text="Invalid Data" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <children>
+                              <TextField fx:id="land_num" layoutX="275.0" layoutY="263.0" onKeyReleased="#candLandline" />
+                              <Label fx:id="cand_landlinel" layoutX="438.0" layoutY="271.0" text="Invalid Number" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <children>
+                              <TextField fx:id="father_num" layoutX="275.0" layoutY="298.0" onKeyReleased="#fathernoValid" />
+                              <Label fx:id="cand_frnol" layoutX="441.0" layoutY="306.0" text="Invalid Name" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="185.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="451.0" minWidth="10.0" prefWidth="451.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" vgap="3.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="192.0" text="Total Family Income from all sources" />
+                        <TextField fx:id="income" layoutX="314.0" layoutY="187.0" onMouseClicked="#fathernoValid" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="337.0" minWidth="10.0" prefWidth="232.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="404.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <HBox alignment="CENTER_LEFT" spacing="15.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label layoutX="95.0" layoutY="189.0" text="Local address for corresspondence" />
+                        <TextArea fx:id="address" layoutX="305.0" layoutY="187.0" prefHeight="168.0" prefWidth="200.0" wrapText="true" />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <GridPane alignment="CENTER" vgap="3.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="75.0" text="Candidate’s Mobile Number" />
+                        <VBox GridPane.columnIndex="1">
+                           <children>
+                              <TextField fx:id="mob_num" layoutX="262.0" layoutY="153.0" onKeyReleased="#candMobileValid" />
+                              <Label fx:id="cand_mobl" layoutX="380.0" layoutY="190.0" text="Invalid Number" textFill="RED" visible="false" />
+                           </children>
+                        </VBox>
+                        <Label text="Candidates Email ID" GridPane.rowIndex="1" />
+                        <TextField fx:id="email_id" onMouseClicked="#candMobileValid" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="346.0" minWidth="10.0" prefWidth="192.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="444.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <FlowPane hgap="5.0">
+                     <children>
+                        <Label text="Whether passed SSC examination or its equivalent with Science, Mathematics and English?" />
+                        <Group>
+                           <children>
+                              <RadioButton layoutX="261.0" layoutY="990.0" mnemonicParsing="false" text="Yes" />
+                              <RadioButton layoutX="318.0" layoutY="991.0" mnemonicParsing="false" text="No" />
+                           </children>
+                        </Group>
+                     </children>
+                     <padding>
+                        <Insets right="10.0" top="10.0" />
+                     </padding>
+                  </FlowPane>
+                  <HBox>
+                     <children>
+                        <Label text="Total marks secured in SSC Examination or its equivalents :">
+                           <padding>
+                              <Insets right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="tot_marks" prefHeight="26.0" prefWidth="38.0">
+                           <padding>
+                              <Insets right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                        <Label text="out of" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="sscoutof_marks" prefHeight="26.0" prefWidth="38.0" HBox.hgrow="NEVER">
+                           <padding>
+                              <Insets right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <GridPane alignment="CENTER" vgap="3.0">
+                     <children>
+                        <Label text="Percentage Marks secured in SSC examination or its equivalent:">
+                           <padding>
+                              <Insets right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="per_marks" GridPane.columnIndex="1">
+                           <padding>
+                              <Insets right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                        <Label text="Year of Passing SSC Examination or its equivalent:" GridPane.rowIndex="1">
+                           <padding>
+                              <Insets right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="410.0" minWidth="10.0" prefWidth="393.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="243.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane alignment="CENTER" vgap="3.0">
+                     <children>
+                        <Label layoutX="-44.0" layoutY="203.0" text="Qualifying Examination: HSC (Science)/HSC Bifocal(Tech.)/MCVC/ITI(CTS)/CoE" />
+                        <TextField fx:id="qual_exam" layoutX="444.0" layoutY="198.0" GridPane.columnIndex="1" />
+                        <Label text="Vocational subject taken at HSC(Sci). OR Course taken at ITI/MCVC Exam:" GridPane.rowIndex="1" />
+                        <TextField fx:id="vocation_sub" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label layoutX="37.92073059082031" layoutY="342.0" text="Aggregate Marks secured in Qualifying Examination: " />
+                        <TextField fx:id="qomark" layoutX="350.9207305908203" layoutY="337.0" onKeyReleased="#calq" prefHeight="26.0" prefWidth="54.0" GridPane.columnIndex="1" />
+                        <Label layoutX="404.9207305908203" layoutY="342.0" text="out of" GridPane.columnIndex="2" />
+                        <TextField fx:id="qtot" layoutX="439.9207305908203" layoutY="337.0" onKeyReleased="#calq" prefHeight="26.0" prefWidth="54.0" GridPane.columnIndex="3" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <Label layoutX="121.0" layoutY="398.0" text="Percentage Marks secured in Qualifying Examination:" />
+                        <TextField fx:id="qper" layoutX="446.0" layoutY="393.0" prefHeight="26.0" prefWidth="54.0" />
+                        <Label layoutX="504.0" layoutY="398.0" text="\%" />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="15.0">
+                     <children>
+                        <Label layoutX="63.0" layoutY="504.0" text="Year of Passing Qualifying Examination exam" />
+                        <DatePicker fx:id="qyear" layoutX="373.0" layoutY="507.0" />
+                     </children>
+                     <padding>
+                        <Insets right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Button fx:id="submit" layoutX="77.0" layoutY="579.0" mnemonicParsing="false" onAction="#onClickUpdate" text="Submit" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Region HBox.hgrow="ALWAYS" />
+                        <Button fx:id="lastb" layoutX="447.0" layoutY="579.0" mnemonicParsing="false" onAction="#conti" text="Last saved" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <Label text="Expected branch" />
+                  <CheckBox fx:id="br_cm" mnemonicParsing="false" onAction="#onCM" text="computer" />
+                  <CheckBox fx:id="br_ej" mnemonicParsing="false" onAction="#onEJ" text="Electronic" />
+                  <CheckBox fx:id="br_if" mnemonicParsing="false" onAction="#onIF" text="information Technology" />
+                  <ListView fx:id="expClass" prefHeight="98.0" prefWidth="326.0" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </content>
+</ScrollPane>

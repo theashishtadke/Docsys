@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DialogsInt.Controller">
+   <children>
+      <ImageView fitHeight="109.0" fitWidth="118.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/transError.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="143.0" layoutY="61.0" text="Student Data not Stored " textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="okbtn" layoutX="260.0" layoutY="141.0" mnemonicParsing="false" onAction="#onclickok" text="Ok" />
+   </children>
+</AnchorPane>

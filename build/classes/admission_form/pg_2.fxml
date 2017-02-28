@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="279.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admission_form.FXMLController1">
+   <children>
+      <Label fx:id="choice_pref31" layoutX="330.0" layoutY="110.0" text="Label" />
+      <Label fx:id="choice_pref21" layoutX="330.0" layoutY="90.0" text="Label" />
+      <Label fx:id="choice_pref11" layoutX="330.0" layoutY="70.0" text="Label" />
+      <Label fx:id="email_stud1" layoutX="208.0" layoutY="40.0" text="Label" />
+      <Label fx:id="mobno_21" layoutX="269.0" layoutY="10.0" text="Label" />
+      <Label fx:id="mobno_11" layoutX="167.0" layoutY="10.0" text="Label" />
+      <Label layoutX="10.0" layoutY="10.0" text="21. Mobile No.">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="70.0" text="a) 1st Preference">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="40.0" text="22. Candidate's Email ID :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="483.0" layoutY="199.0" startX="-100.0" />
+      <Label layoutX="38.0" layoutY="140.0" text="Information given above is same as mentioned in the main application form">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="70.0" text="23. Choice of Courses :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="90.0" text="b) 2nd Preference">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="110.0" text="c) 3rd Preference">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="183.0" text="Checked by : _________________">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="10.0" text="(2)">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="10.0" text="(1)">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="420.0" layoutY="211.0" text="Signature of Applicant">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="print_btn" layoutX="352.0" layoutY="233.0" mnemonicParsing="false" onAction="#doPrinting" text="Print" />
+      <Button fx:id="back_btn" layoutX="215.0" layoutY="232.0" mnemonicParsing="false" onAction="#onClickBack" text="Button" />
+   </children>
+</AnchorPane>

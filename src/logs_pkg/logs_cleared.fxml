@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logs_pkg.Logs_clearedController">
+   <left>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../images/checkmark.png" />
+         </image>
+      </ImageView>
+   </left>
+   <center>
+      <Label text="Logs Cleared Successfully!" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="33.0" prefWidth="570.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ok_btn" layoutX="465.0" layoutY="7.0" mnemonicParsing="false" onAction="#onClickOK" text="OK" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

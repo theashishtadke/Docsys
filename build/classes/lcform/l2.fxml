@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lcform.L2Controller">
+   <children>
+      <GridPane alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" vgap="20.0">
+         <children>
+            <Label fx:id="reason" layoutX="250.0" layoutY="310.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label layoutY="190.0" text="8. Date of Admission" />
+            <Label layoutX="219.0" layoutY="190.0" text=":" GridPane.columnIndex="1" />
+            <Label fx:id="Date_Admission" layoutX="250.0" layoutY="190.0" text="Label" GridPane.columnIndex="2" />
+            <Label layoutY="270.0" text="12. Class in which studying" GridPane.rowIndex="4" />
+            <Label layoutY="230.0" text="10. Conduct" GridPane.rowIndex="2" />
+            <Label layoutY="290.0" text="13. Since when" GridPane.rowIndex="5" />
+            <Label layoutX="219.0" layoutY="270.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label layoutY="330.0" text="15.MSBTE Enrollment No." GridPane.rowIndex="7" />
+            <Label layoutX="219.0" layoutY="210.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label layoutY="310.0" text="14. Reason for leaving the Institute" GridPane.rowIndex="6" />
+            <Label fx:id="date_of_leaving" layoutX="250.0" layoutY="250.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label layoutY="210.0" text="9. Progress" GridPane.rowIndex="1" />
+            <Label fx:id="enroll" layoutX="250.0" layoutY="330.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label layoutX="219.0" layoutY="330.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label layoutY="250.0" text="11. Date of leaving Institute" GridPane.rowIndex="3" />
+            <Label fx:id="Since" layoutX="250.0" layoutY="290.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label layoutX="219.0" layoutY="290.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="classStudy" layoutX="250.0" layoutY="270.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label fx:id="progress" layoutX="250.0" layoutY="210.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label layoutX="219.0" layoutY="310.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="conduct" layoutX="250.0" layoutY="230.0" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label layoutX="219.0" layoutY="230.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label layoutX="219.0" layoutY="250.0" text=":" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="16. Remarks " GridPane.rowIndex="8" />
+            <Label text=":" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="remarks" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="263.8603515625" minWidth="205.6112518310547" prefWidth="214.17730712890625" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="73.38874816894531" minWidth="8.464111328125" prefWidth="8.464111328125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="377.535888671875" minWidth="114.15469360351562" prefWidth="377.535888671875" />
+         </columnConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <HBox alignment="BOTTOM_CENTER" layoutX="14.0" layoutY="370.0" prefHeight="83.0" prefWidth="340.0">
+         <children>
+            <Label text="Date: " />
+            <Label text="dd/mm/yyyy" />
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" layoutX="60.0" layoutY="120.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="86.0" />
+               </children>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" />
+            <Label text="Principle" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <HBox layoutX="54.0" layoutY="370.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="476.0" layoutY="430.0" text="Prepared By" />
+      <Label layoutX="74.0" layoutY="340.0" text="Certified that the above information is in accordance with the Institute" />
+      <Button fx:id="print_btn" layoutX="287.0" layoutY="486.0" mnemonicParsing="false" onAction="#doPrinting" text="Print" />
+      <Button fx:id="back_btn" layoutX="184.0" layoutY="486.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
+   </children>
+</AnchorPane>

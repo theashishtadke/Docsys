@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="category-page" stylesheets="@../gui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dialogs.Controller">
+   <children>
+      <Button fx:id="datastored" layoutX="53.0" layoutY="44.0" mnemonicParsing="false" onAction="#onDataStored" text="Data stored" />
+      <Button fx:id="datanotstored" layoutX="53.0" layoutY="88.0" mnemonicParsing="false" onAction="#onDatanotStored" text="Data not stored" />
+      <Button fx:id="loginsuccess" layoutX="46.0" layoutY="140.0" mnemonicParsing="false" onAction="#loginsuccess" text="Login successful" />
+      <Button fx:id="emailsent" layoutX="53.0" layoutY="200.0" mnemonicParsing="false" onAction="#emailsent" text="Email sent" />
+      <Button fx:id="path" layoutX="324.0" layoutY="290.0" mnemonicParsing="false" onAction="#enterpath" text="Enter path of image" />
+      <Button fx:id="emailnotsent" layoutX="53.0" layoutY="302.0" mnemonicParsing="false" onAction="#emailnotsent" text="Email not send" />
+      <Button fx:id="datanotfilled" layoutX="308.0" layoutY="44.0" mnemonicParsing="false" onAction="#datanotfilled" text="Data not filled" />
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="308.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="path_lbl" layoutX="324.0" layoutY="326.0" text="Path" textFill="WHITE" />
+      <Button fx:id="setimagebtn" layoutX="323.0" layoutY="354.0" mnemonicParsing="false" onAction="#onsetimage" text="Set image" />
+   </children>
+</AnchorPane>
